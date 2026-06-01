@@ -649,7 +649,7 @@ function initVisitorCounter() {
   const el = document.getElementById('visitorCount');
   if (!el) return;
 
-  let count = parseInt(localStorage.getItem('sj_visitors') || '247');
+  let count = parseInt(localStorage.getItem('sj_visitors') || '100');
   count++;
   localStorage.setItem('sj_visitors', count.toString());
   el.textContent = count.toString().padStart(6, '0');
